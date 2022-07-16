@@ -1,5 +1,5 @@
-name: $project_name
-description: A starting point for Dart libraries or applications.
+name: mineral_project
+description: Mineral est un framework robuste, puissant et scalable conçus pour vous permettre de développer des bots discord avec le langage Dart.
 version: 1.0.0
 
 environment:
@@ -7,7 +7,9 @@ environment:
 
 dependencies:
  path: ^1.8.0
- mineral: ^1.0.0
+ mineral:
+  git: https://github.com/mineral-dart/core.git
+  ref: beta
 
 dev_dependencies:
   lints: ^1.0.0
