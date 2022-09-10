@@ -9,10 +9,7 @@ environment:
 
 dependencies:
  path: ^1.8.0
- mineral:
-  git:
-   url: https://github.com/mineral-dart/core.git
-   ref: beta
+ mineral: ^1.0.5
 
 dev_dependencies:
   lints: ^1.0.0
