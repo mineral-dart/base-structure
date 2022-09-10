@@ -6,7 +6,7 @@ void main () async {
     ..intents.defined(all: true)
     ..commands.register([])
     ..events.register([])
-    ..modules.register([DemoModule()])
+    ..modules.register([])
     ..contextMenus.register([]);
 
   await kernel.init();
