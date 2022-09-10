@@ -3,7 +3,11 @@ import 'package:mineral/core.dart';
 
 void main () async {
   Kernel kernel = Kernel()
-    ..intents = [Intent.all];
+    ..intents.defined(all: true)
+    ..commands.register([])
+    ..events.register([])
+    ..modules.register([DemoModule()])
+    ..contextMenus.register([]);
 
   await kernel.init();
 }
