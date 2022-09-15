@@ -9,7 +9,7 @@ environment:
 
 dependencies:
  path: ^1.8.0
- mineral: ^1.0.9
+ mineral: ^1.1.0
 
 dev_dependencies:
   lints: ^1.0.0
