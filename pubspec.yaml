@@ -8,7 +8,7 @@ environment:
   sdk: '>=2.17.0 <3.0.0'
 
 dependencies:
- mineral: ^2.3.0
+ mineral: ^2.4.0
 
 dev_dependencies:
   lints: ^1.0.0
