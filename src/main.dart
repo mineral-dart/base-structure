@@ -1,12 +1,11 @@
 import 'package:mineral/core.dart';
+import 'package:mineral/core/services.dart';
 
 void main () async {
-  Kernel kernel = Kernel()
-    ..intents.defined(all: true)
-    ..commands.register([])
-    ..events.register([])
-    ..modules.register([])
-    ..contextMenus.register([]);
+  final kernel = Kernel(
+    intents: IntentService(all: true),
+    events: EventService([]),
+  );
 
   await kernel.init();
 }
