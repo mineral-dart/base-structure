@@ -1,10 +1,9 @@
 import 'package:mineral/core.dart';
 import 'package:mineral/core/services.dart';
 
-void main () async {
-  final kernel = Kernel(
-    intents: IntentService(all: true),
-  );
+Future<void> main (List<String> arguments) async {
+  final kernel = Kernel(intents: IntentService(all: true),)
+    ..loadConsole();
 
-  await kernel.loadConsole();
+  await kernel.cli.handle(arguments);
 }
